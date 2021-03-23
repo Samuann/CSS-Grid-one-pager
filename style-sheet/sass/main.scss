@@ -1,0 +1,182 @@
+@import '../../shared-styles/core-variables-and-helpers';
+
+/* ----------------- */
+/* ----BASIC SETUP- */
+/* --------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Home-page {
+    $self: &;
+
+    &__container {
+        display: grid;
+        padding: 8em;
+        grid-template-columns: repeat(4, 1fr);
+        background:linear-gradient(to right, $white 50%, $pale-turquoise 50%);
+        grid-auto-rows: minmax(100px, auto);
+
+        @media screen and (max-width: 991px) {
+            padding: 2em;
+        }
+    }
+
+    /* ------------ */
+    /* ----- HEADINGS - */
+    /* ------------ */
+
+    h1,
+    h2,
+    &__more-about-me {
+        font-family: playfair;
+        font-weight: bold
+    }
+
+    h1 {
+    color: $dark-grey;
+    grid-column: 3/5;
+    font-size: 3vw;
+    max-width: 100%;
+    padding-bottom: 10%;
+    padding-top: 7%;
+    }
+
+    /* ------------ */
+    /* NAV BAR */
+    /* ------------ */
+
+    &__main-nav {
+        grid-column: 1/5;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__nav-list {
+        opacity: 0.7;
+        list-style: none;
+        display: flex; 
+        justify-content: space-between; 
+        font-family: 'playfair';
+        font-weight: bold;
+        font-size: 1.5vw;
+        padding-left: 1vw;
+
+        a {
+            text-decoration: none;
+            color: $grey;
+
+            &:hover,
+            &:active{
+                color: $black;
+            }
+        }
+    }
+
+    &__left-intro {
+        grid-column: 1/3;
+        padding: 1em;
+    }
+
+    &__right-intro {
+        grid-column: 3/5;
+        padding: 1em;
+    }
+
+    &__batman {
+        padding-left: 6em;
+        max-width: 100%;
+
+        @media screen and (max-width: 600px) {
+            padding-left: 1.5em;
+        }
+    }
+
+    &__i-am-anita{
+        font-family: Rustelyn;
+        font-size: 10vw;
+    }
+
+    &__more-about-me {
+        color: #161616;
+        font-size: 2vw;
+        line-height:7vh;
+
+        @media screen and  (max-width: 420px){
+            font-size: 3vw;
+            line-height: 5vh;
+        }
+    }
+
+    &__about-me-header {
+        padding: 1em 0;
+    }
+
+    /*--- ABOUT ME --*/
+    &__about-me {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(70px, auto);
+        padding: 2em 8em;
+        background: linear-gradient(to right, $khaki 50%, $white 50%);
+
+        @media screen and (max-width: 991px) {
+            padding: 2em;
+        }
+
+        @media screen and (max-width:455px) {
+            padding: 0.5em;
+        }
+    }
+
+
+    &__about-me-details {
+        font-family: playfair;
+        font-size: 1.6vw;
+        @media screen and  (max-width: 768px) {
+            font-size: 2vw;
+        }
+        @media screen and  (max-width: 420px){
+            font-size: 3vw;
+        }
+    }
+
+    &__info-paragraph{
+        grid-column: 4/6;
+        padding-left: 6em;
+
+        @media screen and  (max-width: 768px) {
+            grid-column: 2/5;
+            padding-left: 0;
+            padding-bottom: 2em;
+            text-align: center;
+        }
+    }
+
+    &__about-image-section {
+        grid-column: 3/4;
+    }
+
+    &__icons-photo {
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 4em;
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 0.5em;
+        }
+    }
+
+    &__about-me-years{
+        font-family: Rustelyn; 
+        font-size: 7vw;
+
+        @media screen and  (max-width: 420px){
+            font-size: 9vw;
+        }
+    }
+}

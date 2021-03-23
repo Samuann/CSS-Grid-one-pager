@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'playfair';
+  src: url(../../assets/fonts/PlayfairDisplay-Regular.ttf); }
+
+@font-face {
+  font-family: 'Rustelyn';
+  src: url(../../assets/fonts/Rustelyn.otf); }
+
+/* ----------------- */
+/* ----BASIC SETUP- */
+/* --------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.Home-page {
+  /* ------------ */
+  /* ----- HEADINGS - */
+  /* ------------ */
+  /* ------------ */
+  /* NAV BAR */
+  /* ------------ */
+  /*--- ABOUT ME --*/ }
+  .Home-page__container {
+    display: grid;
+    padding: 8em;
+    grid-template-columns: repeat(4, 1fr);
+    background: linear-gradient(to right, #ffffff 50%, #c0fdfb 50%);
+    grid-auto-rows: minmax(100px, auto); }
+    @media screen and (max-width: 991px) {
+      .Home-page__container {
+        padding: 2em; } }
+  .Home-page h1,
+  .Home-page h2, .Home-page__more-about-me {
+    font-family: playfair;
+    font-weight: bold; }
+  .Home-page h1 {
+    color: #a0aab2;
+    grid-column: 3/5;
+    font-size: 3vw;
+    max-width: 100%;
+    padding-bottom: 10%;
+    padding-top: 7%; }
+  .Home-page__main-nav {
+    grid-column: 1/5; }
+    @media screen and (max-width: 768px) {
+      .Home-page__main-nav {
+        display: none; } }
+  .Home-page__nav-list {
+    opacity: 0.7;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'playfair';
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding-left: 1vw; }
+    .Home-page__nav-list a {
+      text-decoration: none;
+      color: #757575; }
+      .Home-page__nav-list a:hover, .Home-page__nav-list a:active {
+        color: #161616; }
+  .Home-page__left-intro {
+    grid-column: 1/3;
+    padding: 1em; }
+  .Home-page__right-intro {
+    grid-column: 3/5;
+    padding: 1em; }
+  .Home-page__batman {
+    padding-left: 6em;
+    max-width: 100%; }
+    @media screen and (max-width: 600px) {
+      .Home-page__batman {
+        padding-left: 1.5em; } }
+  .Home-page__i-am-anita {
+    font-family: Rustelyn;
+    font-size: 10vw; }
+  .Home-page__more-about-me {
+    color: #161616;
+    font-size: 2vw;
+    line-height: 7vh; }
+    @media screen and (max-width: 420px) {
+      .Home-page__more-about-me {
+        font-size: 3vw;
+        line-height: 5vh; } }
+  .Home-page__about-me-header {
+    padding: 1em 0; }
+  .Home-page__about-me {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+    padding: 2em 8em;
+    background: linear-gradient(to right, #ffe548 50%, #ffffff 50%); }
+    @media screen and (max-width: 991px) {
+      .Home-page__about-me {
+        padding: 2em; } }
+    @media screen and (max-width: 455px) {
+      .Home-page__about-me {
+        padding: 0.5em; } }
+  .Home-page__about-me-details {
+    font-family: playfair;
+    font-size: 1.6vw; }
+    @media screen and (max-width: 768px) {
+      .Home-page__about-me-details {
+        font-size: 2vw; } }
+    @media screen and (max-width: 420px) {
+      .Home-page__about-me-details {
+        font-size: 3vw; } }
+  .Home-page__info-paragraph {
+    grid-column: 4/6;
+    padding-left: 6em; }
+    @media screen and (max-width: 768px) {
+      .Home-page__info-paragraph {
+        grid-column: 2/5;
+        padding-left: 0;
+        padding-bottom: 2em;
+        text-align: center; } }
+  .Home-page__about-image-section {
+    grid-column: 3/4; }
+  .Home-page__icons-photo {
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 4em; }
+    @media screen and (max-width: 768px) {
+      .Home-page__icons-photo {
+        padding-bottom: 0.5em; } }
+  .Home-page__about-me-years {
+    font-family: Rustelyn;
+    font-size: 7vw; }
+    @media screen and (max-width: 420px) {
+      .Home-page__about-me-years {
+        font-size: 9vw; } }

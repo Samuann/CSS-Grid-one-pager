@@ -1,0 +1,14 @@
+{
+  "name": "flexbox_anita_samuel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass style-sheet/sass/main.scss style-sheet/css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
